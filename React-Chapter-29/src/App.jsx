@@ -1,21 +1,16 @@
+// eslint-disable-next-line no-unused-vars
+import { useState } from "react";
+import "./App.css";
+import Hello from "./components/Hello";
+
 function App() {
   return (
-    (
-      <div className="App0">
-        <SchnucksInfo />
+    <>
+      <div>
+        <Hello />
       </div>
-    ),
-    (
-      <div className="App1">
-        <FavoriteFoodItem foodItem="butter" />
-      </div>
-    ),
-    (
-      <div className="App2">
-        <DierbergsInfo />
-      </div>
-    )
+    </>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+export default App;
